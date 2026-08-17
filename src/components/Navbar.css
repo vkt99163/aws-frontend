@@ -1,0 +1,81 @@
+/* Main Navbar Container */
+nav.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Left Brand Section (Logo + GitHub Text) */
+nav.nav-logo > a {
+  text-decoration: none;
+  color: #f0f6fc;
+}
+
+nav.nav-logo > a > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* GitHub Logo Size Fix */
+nav.nav-logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: #ffffff; /* White background for dark GitHub mark */
+  padding: 2px;
+  display: block;
+}
+
+nav.nav-logo h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+/* Right Navigation Links Container */
+nav.nav-logo > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Navigation Links Styling */
+nav.nav-logo > div a {
+  text-decoration: none;
+}
+
+nav.nav-logo > div a p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c9d1d9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect on Links */
+nav.nav-logo > div a p:hover {
+  color: #ffffff;
+  background-color: #21262d;
+}
+
+/* "Create a Repository" button style (Optional highlight) */
+nav.nav-logo > div a:first-child p {
+  background-color: #238636;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+nav.nav-logo > div a:first-child p:hover {
+  background-color: #2ea043;
+}

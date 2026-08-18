@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://accessible-speaking-owner-berry.trycloudflare.com", 
+  baseURL: "https://aws-backend-93wl.onrender.com", 
 });
 
 // Request Interceptor: Har API request ke sath token bhejne ke liye

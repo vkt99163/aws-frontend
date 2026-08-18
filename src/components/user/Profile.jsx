@@ -21,13 +21,11 @@ const Profile = () => {
       // 2. Check: userId valid honi chahiye ("undefined" ya "null" nahi)
       if (userId && userId !== "undefined" && userId !== "null") {
         try {
-          const response = await API.get(
-            `http://localhost:3000/userProfile/${userId}`
-          );
+          const response = await API.get(`/userProfile/${userId}`);
 
-          // 3. Agar response seedha user object hai:
+          
           if (response.data) {
-            // Check karein data seedha hai ya response.data.user me hai
+           
             setUserDetails(response.data.user || response.data);
           }
         } catch (err) {
